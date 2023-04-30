@@ -56,7 +56,7 @@ public class Main {
         int newIncome = 0;
         int i = 1;
         for (; newIncome <= 12_000_000; i++) {
-            income = (deposit * percent / 100);
+            income = (newIncome * percent / 100);
             newIncome = newIncome + deposit + income;
             System.out.println(" Месяц " + i + " сумма накоплений составляет " + newIncome);
         }
@@ -72,7 +72,7 @@ public class Main {
         int newIncome = 0;
         int i = 1;
         for (; newIncome <= 12_000_000; i++) {
-            income = (deposit * percent / 100);
+            income = (newIncome * percent / 100);
             newIncome = newIncome + deposit + income;
             if (i % 6 == 0) {
                 System.out.println(" Месяц " + i + " сумма накоплений составляет " + newIncome);
@@ -88,7 +88,7 @@ public class Main {
         int income = 0;
         int newIncome = 0;
         for (int i = 0; i <= 108; i++) {
-            income = (deposit * percent / 100);
+            income = (newIncome * percent / 100);
             newIncome = newIncome + deposit + income;
             if (i % 6 == 0) {
                 System.out.println(" Сумма накоплений в " + i + " месяц равна " + newIncome);
